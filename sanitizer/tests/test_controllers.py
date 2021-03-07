@@ -42,12 +42,12 @@ class TestServices(unittest.TestCase):
         mock_object.side_effect = self.expected
         self.service_obj.get_json = Mock(return_value = json.loads(self.valid_in_json))
         ret = self.obj.sanitize()
-        self.assertEqual(ret, self.expected)
+        self.assertEqual(ret, json.dumps(self.expected))
 
     def test__sanitize(self):
         self.service_obj.get_json = Mock(return_value=json.loads(self.valid_in_json))
         ret = self.obj.sanitize()
-        self.assertEqual(ret, self.expected)
+        self.assertEqual(ret, json.dumps(self.expected))
 
 
 if __name__ == '__main__':

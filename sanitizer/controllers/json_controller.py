@@ -1,4 +1,5 @@
 from sanitizer.settings import RULES
+import json
 
 class JsonSanitizer:
     """
@@ -37,7 +38,7 @@ class JsonSanitizer:
         :return: dict
         """
         value = self.json_service.get_json()
-        return self._sanitize(value)
+        return json.dumps(self._sanitize(value))
 
     def _sanitize(self, value):
         """
