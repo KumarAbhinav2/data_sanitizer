@@ -18,3 +18,15 @@ input_json = '{
 
 output_json = '{'k1': 'v1', 'k2': ['v2', 'v3', {'k21': 'v21'}], 'k3': {'k4': 'v4', 'k5': ['v5', 'v6'], 'k6': {'k7': 'v7'}}}'
 ```
+
+## needs:
+
+python 3(onwards)
+
+## Usage:
+
+python driver.py
+
+## test cases:
+
+python -m unittest discover
