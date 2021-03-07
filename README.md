@@ -25,8 +25,8 @@ python 3(onwards)
 
 ## Usage:
 
-python driver.py
+```python driver.py
 
 ## test cases:
 
-python -m unittest discover
+```python -m unittest discover
